@@ -1,4 +1,4 @@
-package com.xiaoweii.cart;
+package com.xiaoweii.lambda.cart;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -57,5 +57,26 @@ public class CartService {
     public static List<Sku> getCartSkuList(){
         return cartSkuList;
     }
+
+    /**
+     * Version 1.0.0
+     * 找出购物车中所有电子产品
+     * @param cartSkuList
+     * @return
+     */
+    public  static List<Sku> filterElectronicSkus(
+            List<Sku> cartSkuList){
+
+        List<Sku> result = new ArrayList<Sku>();
+        for(Sku sku:cartSkuList){
+            // 如果商品类型 等于 电子类
+            if(SkuCategoryEnum.ELECTRONICS
+                    .equals(sku.getSkuCategory())){
+                result.add(sku);
+            }
+        }
+        return result;
+    }
+
 
 }

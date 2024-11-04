@@ -1,4 +1,4 @@
-package com.xiaoweii.cart;
+package com.xiaoweii.lambda.cart;
 
 /**
  * 商品类型枚举

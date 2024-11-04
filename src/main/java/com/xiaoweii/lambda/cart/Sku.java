@@ -1,4 +1,4 @@
-package com.xiaoweii.cart;
+package com.xiaoweii.lambda.cart;
 
 /**
  * Sku 通常用于电商中的商品类
